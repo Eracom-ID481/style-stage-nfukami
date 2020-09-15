@@ -58,7 +58,7 @@ select {
 }
 
 /* Fin du CSS Reset */
-html {
+:root {
     --primary: blue;
     --second: red;
 }
@@ -69,4 +69,8 @@ p {
 
 h1, h2 {
     color: var(--primary)
+}
+
+#main {
+    background: var(--primary)
 }
