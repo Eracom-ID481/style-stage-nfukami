@@ -58,19 +58,101 @@ select {
 }
 
 /* Fin du CSS Reset */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 :root {
-    --primary: blue;
-    --second: red;
+    --black: black;
+    --white: white;
+    --dark: #1b262c;
+    --bluedark: #0f4c75;
+    --bluelight: #00b7c2;
+    --beige: #fdcb9e;
 }
 
-p {
-    color: var(--second)
+.skip-link {
+    display: none;
 }
 
-h1, h2 {
-    color: var(--primary)
+body {
+    background-color: var(--bluedark);
+}
+
+/*header*/
+header .container {
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+header h1 {
+    color: var(--beige);
+    font-size: 5vw;
+}
+
+header h2 {
+    color: var(--dark);
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+header p {
+    font-size: 0.8vw;
+    font-weight: 200;
+    color: var(--beige);
+}
+
+header p a {
+    text-decoration: none;
+    font-size: 0.8vw;
+    padding: 0.2vw;
+    color: var(--beige);
+    background-color: var(--dark);
+}
+
+.container svg {
+    width: 2vw;
+    float: left;
+}
+
+header .link-github {
+    text-decoration: none;
+    font-size: 0.8vw;
+    color: var(--black);
+}
+
+/*nav*/
+nav {
+    background-color: var(--beige);
+    height: 2.5vh;
+    width: 100vw;
+    margin-top: 2vw;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0vw 3vw 0vw 3vw;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.2vh 0.7vw;
+    font-size: 0.9vw;
+    font-weight: 900;
+    color: var(--bluelight);
+    background: var(--bluedark);
 }
 
 #main {
-    background: var(--primary)
+    background-color: var(--beige);
+}
+
+#about .container h2 {
+    background-color: var(--bluedark);
+    padding-left: 5vw;
+    color: var(--beige);
 }
