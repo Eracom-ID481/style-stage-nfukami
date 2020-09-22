@@ -79,6 +79,10 @@ body {
     background-color: var(--bluedark);
 }
 
+ul {
+    list-style-type: none;
+}
+
 /*header*/
 header .container {
     margin-top: 10vh;
@@ -129,10 +133,6 @@ nav {
     margin-top: 2vw;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
 nav li {
     display: inline;
     margin: 0vw 3vw 0vw 3vw;
@@ -147,12 +147,34 @@ nav a {
     background: var(--bluedark);
 }
 
+/*main*/
 #main {
-    background-color: var(--beige);
+    background-color: var(--bluedark);
+}
+
+.container {
+    width: 100%;
+    background-color: var(--bluedark);
+    border-color: var(--beige);
+    border-style: dotted;
+    border-width: medium;
+    padding: 100px;
+}
+
+#main p {
+    color: var(--beige);
+    margin-left: 5vw;
+    width: 100vw;
 }
 
 #about .container h2 {
     background-color: var(--bluedark);
     padding-left: 5vw;
+    padding-top: 5vh;
     color: var(--beige);
+}
+
+#main li {
+    display: inline;
+    margin: 0vw 3vw 0vw 3vw;
 }
