@@ -85,66 +85,84 @@ ul {
 
 /*header*/
 header .container {
-    margin-top: 10vh;
-    margin-left: 5vw;
+    padding: 10rem 15rem 3rem 15rem;
+}
+
+header .container h1 {
+    text-shadow: 6px 6px var(--black);
 }
 
 header h1 {
     color: var(--beige);
-    font-size: 5vw;
+    font-size: 5rem;
 }
 
 header h2 {
     color: var(--dark);
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 header p {
-    font-size: 0.8vw;
+    font-size: 0.8rem;
     font-weight: 200;
     color: var(--beige);
 }
 
 header p a {
     text-decoration: none;
-    font-size: 0.8vw;
-    padding: 0.2vw;
+    font-size: 0.8rem;
+    padding: 0.2rem;
     color: var(--beige);
     background-color: var(--dark);
 }
 
+header a:hover {
+    color: var(--beige);
+}
+
 .container svg {
-    width: 2vw;
-    float: left;
+    width: 0.75rem;
 }
 
 header .link-github {
     text-decoration: none;
-    font-size: 0.8vw;
+    font-size: 1rem;
     color: var(--black);
 }
 
 /*nav*/
 nav {
-    background-color: var(--beige);
-    height: 2.5vh;
-    width: 100vw;
-    margin-top: 2vw;
+    display: inline;
+    place-items: center;
+}
+
+nav ul {
+    margin-bottom: 30px;
+    margin-left: 12rem;
 }
 
 nav li {
     display: inline;
-    margin: 0vw 3vw 0vw 3vw;
+    margin-right: 1rem;
 }
 
 nav a {
     text-decoration: none;
-    padding: 0.2vh 0.7vw;
-    font-size: 0.9vw;
+    padding: 0.12rem 0.7rem;
+    font-size: 1rem;
     font-weight: 900;
-    color: var(--bluelight);
-    background: var(--bluedark);
+    letter-spacing: 0.1rem;
+    color: var(--beige);
+    border-color: var(--beige);
+    border-style: groove;
+    border-width: medium;
+    box-shadow: 2px 2px var(--black);
+}
+
+nav a:hover {
+    color: var(--bluedark);
+    background-color: var(--beige);
 }
 
 /*main*/
@@ -152,29 +170,71 @@ nav a {
     background-color: var(--bluedark);
 }
 
-.container {
+#main p {
+    color: var(--beige);
+    margin-left: 2vw;
+    font-size: 0.9rem;
+}
+
+#main ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: var(--beige);
+}
+
+main .container {
+    padding: 0 6rem;
+}
+
+#main a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    color: var(--beige);
+    background-color: var(--dark);
+}
+
+#main a:hover {
+    color: var(--white);
+}
+
+article .container {
     width: 100%;
     background-color: var(--bluedark);
     border-color: var(--beige);
-    border-style: dotted;
+    border-style: groove;
     border-width: medium;
-    padding: 100px;
+    box-shadow: 3px 3px var(--black);
+    padding: 2rem 6rem 2rem 6rem;
+    margin-bottom: 2rem;
 }
 
-#main p {
-    color: var(--beige);
-    margin-left: 5vw;
-    width: 100vw;
-}
-
-#about .container h2 {
+#main .container h2 {
     background-color: var(--bluedark);
-    padding-left: 5vw;
-    padding-top: 5vh;
+    padding-left: 2rem;
+    font-size: 2rem;
     color: var(--beige);
+    text-shadow: 4px 4px var(--black);
 }
 
-#main li {
-    display: inline;
-    margin: 0vw 3vw 0vw 3vw;
+#main .container h3 {
+    background-color: var(--bluedark);
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: var(--beige);
+    text-shadow: 4px 4px var(--black);
+}
+
+#main .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contribute {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contribute ol {
+    color: var(--beige);
 }
