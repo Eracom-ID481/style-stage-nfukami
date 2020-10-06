@@ -76,7 +76,12 @@ html {
 }
 
 body {
-    background-color: var(--bluedark);
+    background-color: var(--dark);
+    cursor: url('img/mouse2.png'), auto;
+}
+
+body a:hover {
+    cursor: url('img/mouse.png'), auto;
 }
 
 ul {
@@ -98,7 +103,7 @@ header h1 {
 }
 
 header h2 {
-    color: var(--dark);
+    color: var(--beige);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -113,12 +118,13 @@ header p a {
     text-decoration: none;
     font-size: 0.8rem;
     padding: 0.2rem;
-    color: var(--beige);
-    background-color: var(--dark);
+    color: var(--dark);
+    background-color: var(--beige);
 }
 
 header a:hover {
     color: var(--beige);
+    background-color: var(--dark);
 }
 
 .container svg {
@@ -127,8 +133,11 @@ header a:hover {
 
 header .link-github {
     text-decoration: none;
+    padding: 0 0.4rem;
     font-size: 1rem;
-    color: var(--black);
+    font-weight: 200;
+    color: var(--dark);
+    background-color: var(--beige);
 }
 
 /*nav*/
@@ -153,7 +162,8 @@ nav a {
     font-size: 1rem;
     font-weight: 900;
     letter-spacing: 0.1rem;
-    color: var(--beige);
+    color: var(--dark);
+    background-color: var(--beige);
     border-color: var(--beige);
     border-style: groove;
     border-width: medium;
@@ -161,13 +171,13 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--bluedark);
-    background-color: var(--beige);
+    color: var(--beige);
+    background-color: var(--dark);
 }
 
 /*main*/
 #main {
-    background-color: var(--bluedark);
+    background-color: var(--dark);
 }
 
 #main p {
@@ -180,6 +190,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: var(--beige);
+    list-style-type: circle;
 }
 
 main .container {
@@ -190,8 +201,8 @@ main .container {
     text-decoration: none;
     font-size: 0.8rem;
     padding: 0.2rem;
-    color: var(--beige);
-    background-color: var(--dark);
+    color: var(--dark);
+    background-color: var(--beige);
 }
 
 #main a:hover {
@@ -200,17 +211,16 @@ main .container {
 
 article .container {
     width: 100%;
-    background-color: var(--bluedark);
+    background-color: var(--dark);
     border-color: var(--beige);
     border-style: groove;
     border-width: medium;
-    box-shadow: 3px 3px var(--black);
+    box-shadow: 4px 4px var(--black);
     padding: 2rem 6rem 2rem 6rem;
     margin-bottom: 2rem;
 }
 
 #main .container h2 {
-    background-color: var(--bluedark);
     padding-left: 2rem;
     font-size: 2rem;
     color: var(--beige);
@@ -218,7 +228,6 @@ article .container {
 }
 
 #main .container h3 {
-    background-color: var(--bluedark);
     padding-left: 2rem;
     font-size: 1.5rem;
     color: var(--beige);
@@ -233,8 +242,144 @@ article .container {
 #contribute {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
 }
 
 #contribute ol {
     color: var(--beige);
+}
+
+.profile {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    color: var(--beige);
+    background-color: var(--bluedark);
+    border-color: var(--beige);
+    border-style: groove;
+    border-width: medium;
+    box-shadow: 4px 4px var(--black);
+}
+
+.profile {
+    background-color: var(--dark);
+    border-color: var(--beige);
+    border-style: groove;
+    border-width: medium;
+    box-shadow: 4px 4px var(--black);
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.profile ul {
+    list-style-type: circle;
+}
+
+.profile a {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+    background-color: var(--beige);
+    text-decoration: none;
+}
+
+.profile a:hover {
+    color: var(--white);
+}
+
+.profile h4 {
+    background-color: var(--dark);
+    font-size: 1.5rem;
+    color: var(--beige);
+    text-shadow: 4px 4px var(--black);
+}
+
+#styles {
+    max-width: 38rem;
+    margin: 0rem 0rem 0rem 6rem;
+    color: var(--beige);
+    border-color: var(--beige);
+    border-style: groove;
+    border-width: medium;
+    box-shadow: 4px 4px var(--black);
+}
+
+#styles {
+    background-color: var(--dark);
+    border-color: var(--beige);
+    border-style: groove;
+    border-width: medium;
+    box-shadow: 4px 4px var(--black);
+    padding: 2rem 6rem 2rem 6rem;
+    margin-bottom: 2rem;
+}
+
+#styles ul {
+    list-style-type: circle;
+}
+
+#styles a {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.9rem;
+    color: var(--beige);
+    background-color: var(--dark);
+    text-decoration: none;
+}
+
+#styles h2 {
+    font-size: 1.5rem;
+    color: var(--beige);
+    text-shadow: 4px 4px var(--black);
+}
+
+#styles a:hover {
+    color: var(--white);
+}
+
+.page-footer {
+    max-width: 78rem;
+    margin: 0rem 0rem 0rem 6rem;
+    color: var(--beige);
+    background-color: var(--dark);
+    border-color: var(--beige);
+    border-style: groove;
+    border-width: medium;
+    box-shadow: 4px 4px var(--black);
+}
+
+.page-footer {
+    width: 100%;
+    background-color: var(--dark);
+    border-color: var(--beige);
+    border-style: groove;
+    border-width: medium;
+    box-shadow: 4px 4px var(--black);
+    padding: 2rem 6rem 2rem 6rem;
+    margin-bottom: 2rem;
+}
+
+.page-footer ul {
+    list-style-type: circle;
+}
+
+.page-footer a {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+    background-color: var(--beige);
+    text-decoration: none;
+    text-shadow: none !important;
+}
+
+.page-footer a:hover {
+    color: var(--white);
+}
+
+.page-footer p:first-child {
+    font-size: 1.5rem;
+    color: var(--beige);
+    text-shadow: 4px 4px var(--black);
+}
+
+main:focus {
+    outline: none;
 }
